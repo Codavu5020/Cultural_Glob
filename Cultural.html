@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Protect Cultures, Preserve Humanity</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      margin: 20px 0;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #333;
+    }
+    .reaction {
+      text-align: center;
+      margin-top: 30px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:disabled {
+      background: #aaa;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Protect Cultures, Preserve Humanity</h1>
+</header>
+<img src="C:\Users\HP\Documents\CW\Brown Peach Illustrative GreetingsSlogans Banner Landscape.png" alt="Cultural Diversity" style="width:100%; height:auto; border-radius:8px; margin-top:20px;">
+<section>
+  <h2>🌍 Facts</h2>
+  <p>UNESCO reports that nearly <strong>40% of languages</strong> worldwide are endangered, with one disappearing every two weeks.</p>
+  <p>“Every language is an old-growth forest of the mind.” — Wade Davis, Anthropologist</p>
+  <p>According to Pew Research (2023), <strong>72% of global internet users</strong> consume media from Western sources, often unaware of local alternatives.</p>
+</section>
+
+<section>
+  <h2>✊ Call-to-Action</h2>
+  <ul>
+    <li>Support local creators by sharing indigenous music, films, and art.</li>
+    <li>Use hashtags like <strong>#CulturalVoices</strong> and <strong>#HeritageMatters</strong> to amplify underrepresented cultures.</li>
+    <li>Push for diverse representation in media, education, and policy.</li>
+    <li>Explore endangered languages and traditions, then educate others.</li>
+  </ul>
+</section>
+
+<section class="reaction">
+  <h2>👍 Support This Cause</h2>
+  <p>Reaction Counter: <span id="counter">30</span></p>
+  <button id="reactBtn" onclick="react()">Click to Support</button>
+</section>
+
+<script>
+  let clicked = false;
+  let counter = 30;
+
+  function react() {
+    if (!clicked) {
+      counter++;
+      document.getElementById('counter').textContent = counter;
+      document.getElementById('reactBtn').disabled = true;
+      clicked = true;
+    }
+  }
+</script>
+
+</body>
+</html>
